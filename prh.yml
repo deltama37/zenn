@@ -1,10 +1,8 @@
 version: 1
 rules:
-  - expected: Google
-    specs:
-      - from: google
-        to: Google
   - expected: React
-    specs:
-      - from: react
-        to: React
+    pattern: react
+  - expected: Next.js
+    pattern: next.js
+  - expected: Chakra UI
+    pattern: /chakra-ui/
