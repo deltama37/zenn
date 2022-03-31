@@ -7,8 +7,11 @@
       }
     },
     "preset-ja-technical-writing": true,
-    "@proofdict/proofdict": {
-      "dictURL": "https://deltama37.github.io/proof-dictionary/"
+    "spellcheck-tech-word": true,
+    "prh": {
+      "rulePaths": [
+        "./prh.yml"
+      ]
     }
   }
 }
