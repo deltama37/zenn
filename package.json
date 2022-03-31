@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/deltama37/zenn/issues"
   },
-  "homepage": "https://github.com/deltama37/zenn#readme"
+  "homepage": "https://github.com/deltama37/zenn#readme",
+  "dependencies": {
+    "zenn-cli": "^0.1.108"
+  }
 }
