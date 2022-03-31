@@ -1,0 +1,10 @@
+version: 1
+rules:
+  - expected: Google
+    specs:
+      - from: google
+        to: Google
+  - expected: React
+    specs:
+      - from: react
+        to: React
