@@ -4,7 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format:text": "npx textlint --fix",
+    "lint:text": " npx textlint",
+    "prepare": "husky install",
+    "lint:staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.md": [
+      "npm run format:text",
+      "npm run lint:text"
+    ]
   },
   "repository": {
     "type": "git",
@@ -21,6 +30,8 @@
     "zenn-cli": "^0.1.108"
   },
   "devDependencies": {
+    "husky": "^7.0.0",
+    "lint-staged": "^12.3.7",
     "textlint": "^12.1.1",
     "textlint-rule-preset-ja-spacing": "^2.2.0",
     "textlint-rule-preset-ja-technical-writing": "^7.0.0",
